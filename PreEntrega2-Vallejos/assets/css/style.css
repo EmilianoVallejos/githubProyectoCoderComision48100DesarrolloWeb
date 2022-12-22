@@ -1,0 +1,325 @@
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+@font-face {font-family: NanumPenScript;
+    src: url(../fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf )
+}
+
+/*CONTACTOS*/
+.boxModelingForm{
+padding: 50px 50px 50px 50px;
+margin: 50px;
+border-color: #555;
+border: 50px;
+}
+form{
+    width: 400px; height: auto;
+}
+textarea{
+    width: 340px; 
+    height: 250px;
+}
+.buttons {
+color: white;    
+transition-duration: 0.3s;
+border-radius: 4px;
+background-color: black;
+border: none;
+padding: 10px 24px;
+text-align: center;
+text-decoration: none;
+font-size: 14px;
+display: inline-block;
+transition: all 0.5s;
+cursor: pointer;
+font-family: NanumPenScript;
+}
+.buttons:hover {
+background-color:#f1f1f1;
+color: #000;
+}
+fieldset{
+position: relative;
+justify-content: center;
+padding: 80px;
+margin-left: 100px;
+align-items: center;
+height: auto;
+border: 3px solid green;
+}
+
+/*PRODUCTOS*/
+
+
+/*PROMOCIONES*/
+
+@media(max-width: 400px) {
+.fa-bars {
+    display: none;
+}    
+.PadrePromoGrid{
+    width: 70%;
+    grid-template-columns: 10% auto auto;
+    grid-template-rows: 100px auto auto auto auto;
+    grid-template-areas:    "header header header"
+                            "nav    nav    nav"
+                            "main   main   main"
+                            "aside  aside  aside"
+                            "footer footer footer";
+}
+}
+@media (min-width: 768px){
+.fa-bars {
+    display: block;
+    }   
+.PadrePromoGrid{
+    width: 80%;
+}    
+}
+@media (min-width: 1024px){
+.PadrePromoGrid{
+    width: 100%;
+}    
+}
+
+    /*PROMOCIONES  GRID*/
+
+.PadrePromoGrid {
+    display: grid;
+    grid-template-columns: 10% 1200px 300px;
+    grid-template-rows: 100px 500px 500px 50px;
+    grid-template-areas: "header header header"
+                         "nav main    aside"
+                         "nav main    aside"
+                         "nav footer  footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    }
+
+.tituloPromoFlexFont{
+    font-family:'Trebuchet MS', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+    
+
+.HijoPromoGrid1 {
+    grid-area: nav;
+    background-color: #555;
+    align-self: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.HijoPromoGrid2 {
+    grid-area: header;
+
+}
+
+.HijoPromoGrid3 {
+    grid-area: main;
+
+}
+
+.HijoPromoGrid4 {
+    grid-area: aside;
+
+}
+
+.HijoPromoGrid5 {
+    grid-area: footer;
+
+}
+
+    /*PROMOCIONES  FLEX-BOX*/
+
+.promoFlexCajaPadre {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-content: center;
+    
+}
+
+.promoFlexCajaHijo1 {
+padding: 30px 30px;
+margin: 20px 20px;
+}
+
+.promoFlexCajaHijo2 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+    
+.promoFlexCajaHijo3 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+
+.promoFlexCajaHijo4 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+
+.promoFlexCajaHijo5 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+
+.promoFlexCajaHijo6 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+
+.promoFlexCajaHijo7 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+
+.promoFlexCajaHijo8 {
+    padding: 30px 30px;
+    margin: 20px 20px;
+    }
+                        /*PROMOCIONES FLEXBOX-BOTÓN COMPRA*/
+.buttonPromoFlex {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    border-color: #f1f1f1;
+    border: 2px;
+    transition-duration: 0.4s;
+    width: 150px;
+    }                        
+.buttonPromoFlex:hover {
+    background-color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+            /*ASIDE-PROMOCIONES*/
+.asideFlexPadre{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-content: stretch;        
+}
+.asideFlexHijo1{
+    padding: 20px 20px;
+    margin: 10px 10px;
+    }
+.asideFlexHijo2{
+    padding: 20px 20px;
+    margin: 10px 10px;
+    }
+
+.asideFlexHijo3{
+    padding: 20px 20px;
+    margin: 10px 10px;
+    }
+
+
+
+/*SUCURSALES*/
+
+
+
+/*INDEX-INICIO*/
+.boxModelingIndex{ 
+padding: 50px 50px;
+margin: 50px 100px 50px 100px;
+} 
+
+.AnimalungoStyle { 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: anim 4s infinite;
+    font-size: 90px;
+    font-family: NanumPenScript;
+}
+@keyframes anim{
+    from { width: 0;}
+}
+.OfertaSemanal {text-align: center;
+    font-size: 60px;
+    font-family: NanumPenScript;
+}
+body {
+    background-color: #F6821F;
+}
+h1 {
+    color: #FFFFFF;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F6821F;
+    font-family: NanumPenScript;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: NanumPenScript;
+    font-size: 20px;
+}
+li a:hover {
+    background-color: rgba(78, 58, 58, 0.486);
+}
+p{font-family: NanumPenScript;
+font-size: 20px;
+text-align: center;}
+
+img{ border-radius: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.container {
+margin: 100px 100px 20px 200px;
+position: relative;
+width: 50%;
+}
+
+.ImageOffer {
+opacity: 1;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .ImageOffer {
+opacity: 0.3;
+}
+
+.container:hover .middle {
+opacity: 1;
+}
+
+.text {
+background-color: #ac2f2f;
+color: white;
+font-size: 20px;
+font-family: NanumPenScript;
+padding: 16px 32px;}
