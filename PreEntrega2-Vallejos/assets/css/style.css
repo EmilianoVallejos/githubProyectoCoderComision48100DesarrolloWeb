@@ -51,43 +51,36 @@ border: 3px solid green;
 
 /*PRODUCTOS*/
 
+@media (max-width: 800px){
+.contenedorProductos {
+    width: 100%;
+    background-color: green;
+    padding: 0;
+    margin: 0;
+}
+.contenedorFooter {
+    background-color: green;
+}
+}
+@media (max-width: 450px){
+.contenedorProductos {
+    width: 100%;
+    background-color: yellow;
+    padding: 0;
+    margin: 0;
+}
+.contenedorFooter {
+    background-color: rgb(88, 88, 26);
+}
+}
 
 /*PROMOCIONES*/
-
-@media(max-width: 400px) {
-.fa-bars {
-    display: none;
-}    
-.PadrePromoGrid{
-    width: 70%;
-    grid-template-columns: 10% auto auto;
-    grid-template-rows: 100px auto auto auto auto;
-    grid-template-areas:    "header header header"
-                            "nav    nav    nav"
-                            "main   main   main"
-                            "aside  aside  aside"
-                            "footer footer footer";
-}
-}
-@media (min-width: 768px){
-.fa-bars {
-    display: block;
-    }   
-.PadrePromoGrid{
-    width: 80%;
-}    
-}
-@media (min-width: 1024px){
-.PadrePromoGrid{
-    width: 100%;
-}    
-}
 
     /*PROMOCIONES  GRID*/
 
 .PadrePromoGrid {
     display: grid;
-    grid-template-columns: 10% 1200px 300px;
+    grid-template-columns: 10% 85% 5%;
     grid-template-rows: 100px 500px 500px 50px;
     grid-template-areas: "header header header"
                          "nav main    aside"
@@ -95,7 +88,7 @@ border: 3px solid green;
                          "nav footer  footer";
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    }
+}
 
 .tituloPromoFlexFont{
     font-family:'Trebuchet MS', sans-serif;
@@ -138,7 +131,6 @@ border: 3px solid green;
     flex-direction: row;
     justify-items: start;
     align-content: center;
-    
 }
 
 .promoFlexCajaHijo1 {
@@ -152,11 +144,6 @@ margin: 20px 20px;
     }
     
 .promoFlexCajaHijo3 {
-    padding: 30px 30px;
-    margin: 20px 20px;
-    }
-
-.promoFlexCajaHijo4 {
     padding: 30px 30px;
     margin: 20px 20px;
     }
@@ -176,10 +163,34 @@ margin: 20px 20px;
     margin: 20px 20px;
     }
 
-.promoFlexCajaHijo8 {
-    padding: 30px 30px;
-    margin: 20px 20px;
+@media (max-width: 800px){
+.PadrePromoGrid{
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:    "header header header"
+                                "main  main  main"
+                                "main   main   main"
+                                "main   main   main"
+                                "footer footer footer";
     }
+}
+
+@media (max-width: 500px){
+.PadrePromoGrid{
+        width: 80%;
+    } 
+.promoFlexCajaHijo1, .promoFlexCajaHijo2, .promoFlexCajaHijo3, .promoFlexCajaHijo5, .promoFlexCajaHijo6, .promoFlexCajaHijo7{
+    width: 100%;
+}       
+}
+
+@media (max-width: 300px){
+.promoFlexCajaHijo1, .promoFlexCajaHijo2, .promoFlexCajaHijo3, .promoFlexCajaHijo5, .promoFlexCajaHijo6, .promoFlexCajaHijo7{
+        width: 100%;
+} 
+}
+
+
                         /*PROMOCIONES FLEXBOX-BOTÓN COMPRA*/
 .buttonPromoFlex {
     font-size: 20px;
